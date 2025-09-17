@@ -18,11 +18,11 @@ public class CuboAmarillo : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) 
         {
-            transform.position = verde.position;
+            other.transform.position = verde.position;
         }
     }
 }
